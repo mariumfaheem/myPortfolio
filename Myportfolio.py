@@ -15,6 +15,9 @@ else:
     app.config['SQLALCHEMY_DATABASE_URI'] = params['production_server']
 
 db = SQLAlchemy(app)
+
+
+
 app.secret_key="super-secret-key"
 UPLOAD_FOLDER = params['upload_location']
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
